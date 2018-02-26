@@ -1,10 +1,8 @@
 <?php
 
-/*
-Bootstrap 4.0.0-alpha2 nav walker extension class
-=================================================
-Add this to your `functions.php`
-*/
+/**!
+ * Navbar walker nav menu
+ */
 class bootstrap_4_walker_nav_menu extends Walker_Nav_menu {
     
     function start_lvl( &$output, $depth ){ // ul
@@ -59,9 +57,8 @@ class bootstrap_4_walker_nav_menu extends Walker_Nav_menu {
 /*
 Register Navbar
 */
-register_nav_menus(array(
-  'header_menu' => 'Меню в header',  
-  'sidebar_menu' => 'Меню в sidebar'
+register_nav_menu('navbar', __('Navbar', 'Меню в header')); 
+register_nav_menus(array( 'sidebar_menu' => 'Меню в sidebar'));
 ));
 
 /*
