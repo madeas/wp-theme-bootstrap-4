@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div class="container bg-white my-3">
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb bg-white">
@@ -8,7 +7,6 @@
   </ol>
 </nav>
 </div>
-
 <div class="container bg-white my-3 py-3">
     <h1><?php the_title(); ?></h1>
     <?php if (have_posts()): while (have_posts()): the_post(); ?>
