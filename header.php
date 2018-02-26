@@ -18,13 +18,24 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>	
-
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a>
-
+<header itemscope itemtype="http://schema.org/WPHeader" class="header">
+	
+<div class="bg-white header-widgets">
+    <div class="container">
+		<div class="row very-top-header">
+          <?php
+if ( is_active_sidebar( 'custom-header-widget' ) ) : ?>
+	<?php dynamic_sidebar( 'custom-header-widget' ); ?>
+<?php endif; ?>
+		</div>
+    </div>
+</div>
+	
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>	
+<a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a>
     <div class="collapse navbar-collapse" id="navbarDropdown">
       <?php
         wp_nav_menu( array(
@@ -37,12 +48,10 @@
           'walker'          => new bootstrap_4_walker_nav_menu()
         ) );
       ?>
-
-      <form class="form-inline ml-auto pt-2 pt-md-0" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-        <input class="form-control mr-sm-1" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
-        <button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-outline-secondary my-2 my-sm-0">
-          <i class="fas fa-search"></i>
-        </button>
-      </form>
+		<form role="search" method="get" id="searchform" class="form-inline my-2 my-lg-0 searchform" action="http://demo.madeas.ru/">
+					<input class="form-control mr-sm-2" type="text" placeholder="Поиск" value="" name="s" id="s">
+      				<button class="btn btn-outline-secondary my-2 my-sm-0" id="searchsubmit" type="submit">Поиск</button>
+			</form>
     </div>
-</nav>
+</nav>	
+</header>
