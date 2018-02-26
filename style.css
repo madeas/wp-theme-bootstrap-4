@@ -1,0 +1,306 @@
+/*
+Theme Name: CAMS
+Theme URI: http://demo.madeas.ru
+Author: Andrej Sharapov
+Author URI: http://madeas.ru
+Description: Шаблон для WordPress 4.9.4 с применением популярных фреймворков и набором шрифтов: Bootstrap & Bootstrap-grid v4.0.0, Font-Awesome v4.7.0, jQuery v3.3.1, Popper.js, Animate v3.5.2
+Version: 0.0.1
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl.html
+Text Domain: cams
+Tags: one-column, two-columns, right-sidebar, custom-header, custom-background, custom-colors, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, threaded-comments, translation-ready, accessibility-ready, e-commerce, blog, portfolio
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+CAMS, Copyright (c) 2018 Andrej Sharapov .
+
+1. GLOBAL STYLES
+	1.1 GENERAL STYLES
+	1.2 ANCHOR AND BOLD TEXT
+
+2. COMPONENTS
+	2.1 TYPOGRAPHY
+	2.2 ELEMENTS
+	2.3 ALIGNMENTS
+	2.4 BUTTONS
+	2.5 BORDER AND LINE
+	2.6 FORM ELEMENTS
+  
+3. SECTION HEADER
+	    3.1 BOOTSTRAP NAVIGATION
+	    3.2 ONLY LOGO
+	    3.3 MASTHEAD
+  
+4. SECTION STYLES
+	4.1 SECTION: 
+	4.2 SECTION: 
+	4.3 SECTION: 
+	4.4 SECTION: 
+
+5. DEFAULT COLORS
+
+6. BLOG
+	6.1 SINGLE PAGE
+	6.2 GALLERY
+
+7. SIDEBAR
+
+8. RESPONSIVE
+*/
+
+/* --------------------------------------
+=========================================
+   1. GLOBAL STYLES
+=========================================
+-----------------------------------------*/
+
+
+/*---------------------------------------
+   1.1 GENERAL STYLES
+-----------------------------------------*/
+
+html {
+	font-family: sans-serif;
+	font-size: 100%;
+
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	margin: auto !important;
+	color: #505050;
+	font-family: 'Exo 2', Helvetica Neue, Sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+/*---------------------------------------
+   1.2 ANCHOR AND BOLD TEXT
+-----------------------------------------*/
+
+a {
+	text-decoration: none!important;
+	
+	-webkit-transition: all ease 0.25s;
+	transition: all ease 0.25s;
+}
+
+a:hover {
+	
+}
+
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+/* --------------------------------------
+=========================================
+   2. COMPONENTS
+=========================================
+-----------------------------------------*/
+
+
+/*---------------------------------------
+   2.1 TYPOGRAPHY
+-----------------------------------------*/
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: 'Exo 2', Open Sans, Helvetica Neue, Sans-serif;
+	font-weight: normal;
+	line-height: 1.2;
+	color: #333;
+	transition: all .3s ease-in-out;
+}
+
+/*---------------------------------------
+   2.2 ELEMENTS
+-----------------------------------------*/
+table {
+  width: 100%;
+  margin:0;
+  padding:0;
+  word-wrap: break-word;
+}
+
+table tr {
+  border: 0px solid #f4f4f4;
+  text-align: center;
+}
+
+table th, 
+table td {
+  padding: 10px;
+  max-width: 33.333333%;
+  width: auto;
+  
+}
+table td {
+	text-align: left;
+	border: 0px solid #f4f4f4;
+    font-size: 13px;
+	vertical-align: top;
+}
+table th {
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+  table {
+    border: 0;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #f4f4f4;
+  }
+  table td {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+	border: 0;
+    border-bottom: 1px dotted #f4f4f4;
+	max-width: 100%;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+	display: block;
+	padding: 0 8px;
+	background: #f4f4f4;
+  }
+}
+
+/*---------------------------------------
+   2.3 ALIGNMENTS
+-----------------------------------------*/
+
+.alignleft {
+	width:100%;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	width:100%;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	display: block;
+	clear: both;
+	margin: 0 auto;
+}
+
+/*---------------------------------------
+   2.4 BUTTONS
+-----------------------------------------*/
+
+/*---------------------------------------
+   2.5 BORDER AND LINE
+-----------------------------------------*/
+
+/* --------------------------------------
+=========================================
+   1. SECTION HEADERS
+=========================================
+-----------------------------------------*/
+
+/*---------------------------------------
+    3.1 BOOTSTRAP NAVIGATION
+-----------------------------------------*/
+.navbar .dropdown-menu li {
+  width: 100%;
+  margin-left: 0 !important;
+}
+
+/*---------------------------------------
+    3.1 ONLY LOGO
+-----------------------------------------*/
+
+/*---------------------------------------
+    3.1 MASTHEAD
+-----------------------------------------*/
+.masthead {
+	height: 100vh;
+    padding-top: 15rem;
+	padding-left:10rem;
+	padding-right:10rem;
+    padding-bottom: calc(10rem - 56px);
+	
+    background-image: url(/wp-content/uploads/2018/02/bg.jpg);
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*---------------------------------------
+   2.7 FORM ELEMENTS
+-----------------------------------------*/
+
+
+/* --------------------------------------
+=========================================
+   3. SECTION HEADER
+=========================================
+-----------------------------------------*/
+
+/*---------------------------------------
+   3.1 BOOTSTRAP NAVIGATION
+-----------------------------------------*/
+
+
+/* --------------------------------------
+=========================================
+4. SECTION STYLES
+=========================================
+-----------------------------------------*/
+
+
+/* --------------------------------------
+=========================================
+   5. DEFAULT COLORS
+=========================================
+-----------------------------------------*/
+
+
+/* --------------------------------------
+=========================================
+   6. BLOG
+=========================================
+-----------------------------------------*/
+
+
+/* --------------------------------------
+=========================================
+   7. SIDEBAR
+=========================================
+-----------------------------------------*/
+
+
+/* --------------------------------------
+=========================================
+   8. RESPONSIVE
+=========================================
+-----------------------------------------*/
