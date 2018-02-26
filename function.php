@@ -57,10 +57,8 @@ class bootstrap_4_walker_nav_menu extends Walker_Nav_menu {
 /*
 Register Navbar
 */
-register_nav_menu('navbar', __('Navbar', 'Меню в header')); 
+register_nav_menu('navbar', __('Navbar', 'Меню в header'));
 register_nav_menus(array( 'sidebar_menu' => 'Меню в sidebar'));
-));
-
 /*
  * Основные стили сайта 
  *
@@ -104,4 +102,28 @@ function theme_get_file( $file ) {
 
 	return $file;
 }
+
+function top_widgets_init() {
+	register_sidebar( array(
+		'name'          => 'Верхняя часть сайта',
+		'id'            => 'custom-header-widget',
+		'before_widget' => '<div class="col-4 col-md">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h5 class="text-dark">',
+		'after_title'   => '</h5>',
+	) );
+}
+add_action( 'widgets_init', 'top_widgets_init' );
+
+function wpb_widgets_init() {
+	register_sidebar( array(
+		'name'          => 'Нижняя часть сайта',
+		'id'            => 'custom-footer-widget',
+		'before_widget' => '<div class="col-6 col-md">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h5 class="text-white">',
+		'after_title'   => '</h5>',
+	) );
+}
+add_action( 'widgets_init', 'wpb_widgets_init' );
 ?>
