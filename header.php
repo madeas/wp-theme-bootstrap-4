@@ -48,10 +48,10 @@ if ( is_active_sidebar( 'custom-header-widget' ) ) : ?>
           'walker'          => new bootstrap_4_walker_nav_menu()
         ) );
       ?>
-		<form role="search" method="get" id="searchform" class="form-inline my-2 my-lg-0 searchform" action="http://demo.madeas.ru/">
-					<input class="form-control mr-sm-2" type="text" placeholder="Поиск" value="" name="s" id="s">
-      				<button class="btn btn-outline-secondary my-2 my-sm-0" id="searchsubmit" type="submit">Поиск</button>
-			</form>
+		<?php
+				get_search_form();
+		endif;
+		?>
     </div>
 </nav>	
 </header>
