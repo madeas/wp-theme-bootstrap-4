@@ -22,7 +22,9 @@
         </div>
 		  
         <figure>
-          <img class="thumbnail" src="http://placehold.it/650x250">
+          <a href="<?php the_permalink(); ?>">
+<?php the_post_thumbnail( 'full-thumbnail', array( 'class' => 'thumbnail' ) ); ?>
+</a>
         </figure>
 		  
         <?php the_content(); ?>
