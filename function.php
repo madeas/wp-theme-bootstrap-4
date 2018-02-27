@@ -129,15 +129,13 @@ function top_widgets_init() {
 }
 add_action( 'widgets_init', 'top_widgets_init' );
 
-function wpb_widgets_init() {
-	register_sidebar( array(
-		'name'          => 'Нижняя часть сайта',
-		'id'            => 'custom-footer-widget',
-		'before_widget' => '<div class="col-6 col-md">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h5 class="text-white">',
-		'after_title'   => '</h5>',
-	) );
+/* добавляем изображение записи */
+if ( function_exists( 'add_theme_support' ) ) { 
+	add_theme_support( 'post-thumbnails' ); 
 }
-add_action( 'widgets_init', 'wpb_widgets_init' );
+
+if ( function_exists( 'add_theme_support' ) ) { 
+	add_theme_support( 'post-thumbnails' ); 
+	add_image_size( 'full-thumbnail', 650, 250, true ); // название, ширина, высота, жесткая обрезка
+}
 ?>
