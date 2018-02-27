@@ -48,10 +48,7 @@ if ( is_active_sidebar( 'custom-header-widget' ) ) : ?>
           'walker'          => new bootstrap_4_walker_nav_menu()
         ) );
       ?>
-		<?php
-				get_search_form();
-		endif;
-		?>
+		<?php get_template_part('searchform'); ?>get_search_form(); ?>
     </div>
 </nav>	
 </header>
