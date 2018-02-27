@@ -1,19 +1,4 @@
 <?php
-/**
- * tWPonB4 functions and definitions
- *
- * @package WordPress
- * @subpackage tWPonB4
- * @since 1.0
- */
-/**
- * tWPonB4 only works in WordPress 4.9 or later.
- */
-if ( version_compare( $GLOBALS['wp_version'], '4.9-alpha', '<' ) ) {
-	require get_template_directory() . '/inc/back-compat.php';
-	return;
-}
-
 /**!
  * Navbar walker nav menu
  */
@@ -71,16 +56,13 @@ class bootstrap_4_walker_nav_menu extends Walker_Nav_menu {
 /*
 Register Navbar
 */
-register_nav_menu('navbar', __('Navbar', 'Меню в header'));
-register_nav_menus(array( 'sidebar_menu' => 'Меню в sidebar'));
+register_nav_menu('navbar', __('Navbar', 'Основное меню'));
 /*
  * Основные стили сайта 
  *
 */
-
 // Заносим CSS стили и JS скрипты в функцию theme_scripts_styles
 function theme_scripts_styles(){
-
 // Подключаю стили
     wp_enqueue_style( 'exo', ('http://fonts.googleapis.com/css?family=Exo+2:300,300italic,500,600&subset=latin,cyrillic'), array(), '', 'all' );
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '4.0.0', 'all' );
@@ -95,13 +77,11 @@ function theme_scripts_styles(){
 }
 // Создаем экшн в котором подключаем скрипты подключенные внутри функции twentytwelve_scripts_styles
 add_action( 'wp_enqueue_scripts', 'theme_scripts_styles', 1 );
-
 /*
  * theme_get_file выводит файлы из директории темы 
  * название можно выбрать любое и менять его в файлах выше, соответственно * 
  *
  */
-
 function theme_get_file( $file ) {
 	$file_parts   = pathinfo( $file );
 	$accepted_ext = array( 'jpg', 'img', 'png', 'css', 'js' );
@@ -113,21 +93,20 @@ function theme_get_file( $file ) {
 			return esc_url( get_template_directory_uri() . $file );
 		}
 	}
-
 	return $file;
 }
-
-function top_widgets_init() {
+function wpb_widgets_init() {
 	register_sidebar( array(
-		'name'          => 'Верхняя часть сайта',
-		'id'            => 'custom-header-widget',
-		'before_widget' => '<div class="col-4 col-md">',
+		'name'          => 'Нижняя часть сайта',
+		'description'   => 'Перетащите сюда виджеты, чтобы добавить',
+		'id'            => 'custom-footer-widget',
+		'before_widget' => '<div class="col-6 col-md">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h5 class="text-dark">',
+		'before_title'  => '<h5 class="text-white">',
 		'after_title'   => '</h5>',
 	) );
 }
-add_action( 'widgets_init', 'top_widgets_init' );
+add_action( 'widgets_init', 'wpb_widgets_init' );
 
 /* добавляем изображение записи */
 if ( function_exists( 'add_theme_support' ) ) { 
@@ -138,4 +117,23 @@ if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'post-thumbnails' ); 
 	add_image_size( 'full-thumbnail', 650, 250, true ); // название, ширина, высота, жесткая обрезка
 }
+// Register Sidebar
+function right_sidebar() {
+ 
+	$args = array(
+		'id'            => 'sidebar-right',
+		'name'          => __( 'Правая колонка', 'striped' ),
+		'description'   => __( 'Перетащите сюда виджеты, чтобы добавить', 'striped' ),
+		'class'         => 'striped-widget',
+		'before_title'  => '<h3 class="widgettitle">',
+		'after_title'   => '</h3>',
+		'before_widget' => '<div id="%1$s" class="py-3 widget %2$s">',
+		'after_widget'  => '</div>',
+	);
+	register_sidebar( $args );
+ 
+} 
+// Hook into the 'widgets_init' action
+add_action( 'widgets_init', 'right_sidebar' );
+
 ?>
