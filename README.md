@@ -1,6 +1,6 @@
 # Free theme for wordpress on bootstrap-4. <sup>In developing</sup>
 
-Contributors: 
+Contributors: madeas, 
 
 Requires at least: WordPress 4.9
 
