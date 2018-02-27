@@ -11,15 +11,19 @@ Tags: blog, one-column, two-columns, left-sidebar, right-sidebar, custom-backgro
 
 # Created:
 
-index.php<br />
-search.php<br />
-searchform.php<br />
-page.php<br />
-single.php
+style.css
 ____________
 function.php
 ____________
-footer.php<br />
-header.php
+footer.php - подвал сайта<br />
+front-page.php - главная страница сайта<br />
+header.php - шапка сайта
 ____________
-style.css
+home.php - страница записей<br />
+____________
+index.php - основной шаблон<br />
+page.php - отдельная страница<br />
+search.php - страница записей<br />
+searchform.php<br />
+sidebar.php - боковая колонка<br />
+single.php - отдельная запись (в блоге)
