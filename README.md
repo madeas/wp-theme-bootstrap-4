@@ -16,7 +16,7 @@ ____________
 function.php
 ____________
 footer.php - подвал сайта<br />
-front-page.php - главная страница сайта<br />
+<s>front-page.php - главная страница сайта<br /></s>
 header.php - шапка сайта
 ____________
 home.php - страница записей<br />
