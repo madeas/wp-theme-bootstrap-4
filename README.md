@@ -14,11 +14,12 @@ Tags: blog, one-column, two-columns, left-sidebar, right-sidebar, custom-backgro
 
 * tWPonB4 on <a href="http://demo.madeas.ru/" title="">demo.madeas.ru</a> - csm wp - bootstrap 4
 
-# Create on bootstrap:
+# Created:
 
 index.php
 
 search.php
+searchform.php
 
 page.php
 
