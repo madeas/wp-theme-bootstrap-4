@@ -19,15 +19,8 @@ get_header(); ?>
 </div>
 <div class="container bg-white my-3 py-3">
 		<h1><?php the_title(); ?></h1>
-			<?php
-			while ( have_posts() ) :
-				the_post();
-				get_template_part( 'template-parts/page/content', 'page' );
-				// Если комментарии открыты или у нас есть хотя бы один комментарий, загрузите шаблон комментария.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			endwhile; // End of the loop.
-			?>
+	<?php if (have_posts()): while (have_posts()): the_post(); ?>
+	<?php the_content(); ?>
+	<?php endwhile; endif; ?>
 </div>
 <?php get_footer(); ?>
