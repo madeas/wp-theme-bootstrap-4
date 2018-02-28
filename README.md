@@ -1,6 +1,6 @@
 # Free theme for wordpress on bootstrap-4. <sup>In developing</sup>
 
-Contributors: <a href="https://github.com/Madeas">madeas</a>, 
+Contributors: <a href="https://github.com/Madeas">madeas</a>, <a href="https://github.com/ierhyna">ierhyna</a>
 <br />Requires at least: WordPress 4.9<br />
 Testing on to: WordPress 4.9.4<br />
 License: GPLv3 or later<br />
