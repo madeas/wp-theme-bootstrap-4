@@ -15,14 +15,14 @@ Tags: blog, one-column, two-columns, left-sidebar, right-sidebar, custom-backgro
 ____________
 <a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/function.php" title="">function.php</a> - функции темы
 ____________
-<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/archive.php" title="">archives.php</a> - архивы
-<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/comments.php" title="">comments.php</a> - комментарии
-<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/content-single.php" title="">content-single.php</a>
-<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/content.php" title="">content.php</a>
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/archive.php" title="">archives.php</a> - архивы <br />
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/comments.php" title="">comments.php</a> - комментарии <br />
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/content-single.php" title="">content-single.php</a> - содержание страницы с записью блога<br />
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/content.php" title="">content.php</a> - содержание главной страницы
 ____________
 <a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/footer.php" title="">footer.php</a> - подвал сайта <br />
 <a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/front-page.php" title="">front-page.php</a> - главная страница сайта <br />
-<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/header.php" title="">header.php</a> - шапка сайта
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/header.php" title="">header.php</a> - Заголовок (шапка сайта)
 ____________
 <a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/home.php" title="">home.php</a> - страница записей <br />
 ____________
