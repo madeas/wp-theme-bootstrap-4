@@ -9,21 +9,26 @@ Tags: blog, one-column, two-columns, left-sidebar, right-sidebar, custom-backgro
 
 * tWPonB4 on <a href="http://demo.madeas.ru/" title="">demo.madeas.ru</a> - csm wp 4.9-alpha - bootstrap 4
 
-# Created:
+# Template structure in WP themes:
 
-style.css
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/style.css" title="">style.css</a> - таблица стилей
 ____________
-function.php
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/function.php" title="">function.php</a> - функции темы
 ____________
-footer.php - подвал сайта<br />
-<s>front-page.php - главная страница сайта<br /></s>
-header.php - шапка сайта
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/archive.php" title="">archives.php</a> - архивы
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/comments.php" title="">comments.php</a> - комментарии
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/content-single.php" title="">content-single.php</a>
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/content.php" title="">content.php</a>
 ____________
-home.php - страница записей<br />
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/footer.php" title="">footer.php</a> - подвал сайта <br />
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/front-page.php" title="">front-page.php</a> - главная страница сайта <br />
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/header.php" title="">header.php</a> - шапка сайта
 ____________
-index.php - основной шаблон<br />
-page.php - отдельная страница<br />
-search.php - страница записей<br />
-searchform.php<br />
-sidebar.php - боковая колонка<br />
-single.php - отдельная запись (в блоге)
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/home.php" title="">home.php</a> - страница записей <br />
+____________
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/index.php" title="">index.php</a> - основной шаблон <br />
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/page.php" title="">page.php</a> - отдельная страница <br />
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/search.php" title="">search.php</a> - страница записей <br />
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/searchform.php" title="">searchform.php</a> <br />
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/sidebar.php" title="">sidebar.php</a> - боковая колонка <br />
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/single.php" title="">single.php</a> - отдельная запись (в блоге)
