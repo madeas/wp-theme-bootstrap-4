@@ -13,7 +13,7 @@ Tags: blog, one-column, two-columns, left-sidebar, right-sidebar, custom-backgro
 
 <a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/style.css" title="">style.css</a> - таблица стилей
 ____________
-<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/function.php" title="">function.php</a> - функции темы
+<a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/functions.php" title="">functions.php</a> - функции темы
 ____________
 <a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/archive.php" title="">archives.php</a> - архивы <br />
 <a href="https://github.com/madeas/wp-theme-bootstrap-4/blob/master/comments.php" title="">comments.php</a> - комментарии <br />
